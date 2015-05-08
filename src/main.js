@@ -37,7 +37,7 @@ var yVar = "產地";
 
 var cells;
 
-d3.json('../data/52_3.json', function(error, json){
+d3.json('data/52_3.json', function(error, json){
 	rawData = json;
 
 	//collapse redundant object
