@@ -38,6 +38,19 @@ h1 {
   padding-top: 1em;
 }
 
+p {
+  font-size: 14px;
+  line-height: 50%;
+}
+
+a:link, a:visited, a:active {
+  color: #000000;
+}
+
+a:hover {
+  color: #f768a1;
+}
+
 .main {
   height: 100%;
   width: auto;

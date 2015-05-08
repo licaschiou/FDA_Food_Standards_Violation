@@ -3,8 +3,8 @@ var cleanData = [];
 var width = 960;
 var height = 1200;
 var padding = {
-	left : 200,
-	top : 50,
+	left : 100,
+	top : 60,
 	right : 0,
 	bottom : 400
 };
