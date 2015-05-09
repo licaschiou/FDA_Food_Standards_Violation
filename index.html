@@ -11,10 +11,20 @@
 
 <body>
 	<div class = "main">
-		<h1>食藥署不符合食品資訊資料視覺化</h1>		
-		<p>資料來源 : <a href="http://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=52" target="blank">食品藥物開放資料平臺</a></p>
-		<p>資料處理 : 轉換原始資料結構，對資料值未做任何處理</p>
-		<hr>
+		<p>Chiu Wei Chieh 2015</p>
+		<h1>食藥署違規食品產地與違規原因資料視覺化</h1>		
+		<ul>
+			<li>資料來源 : <a href="http://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=52" target="blank">食品藥物開放資料平臺</a>。</li>
+			<li>資料處理 : 轉換原始資料結構，對資料值未做任何處理</li>
+			<li>使用方式 : 滑鼠游標移至資料格或 X, Y 軸上顯示統計數據。</li>
+		</ul>
+		<svg id = "chartOriginReason"></svg>
+<!-- 		<form id = "control">			
+			<label><input type="radio" name="variable" value="產地" >產地</label>
+			<label><input type="radio" name="variable" value="原因">原因</label>
+			<label><input type="radio" name="variable" checked = "true" value="產地~原因">產地 ~ 原因</label>
+		</form> -->
+
 	</div>
 	
 	<script src="src/d3.v3.min.js"></script>

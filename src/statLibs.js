@@ -58,6 +58,21 @@ var table = function(dataset){
 	return newTable;
 };
 
+var objectToArray = function(tb){
+	var newArray = [];
+	var keyList = Object.keys(tb);
+	for(var j = 0, m = keyList.length; j < m; j++){
+		var cell = {
+				category : "",
+				count : 0
+		};
+		cell.category = keyList[j];
+		cell.count = tb[keyList[j]];
+		newArray.push(cell);
+	}
+	return newArray;
+};
+
 //e.g. twoWayTable(dataset, "產地", "原因")
 //Input : json data
 var twoWayTable = function(dataset, var1, var2){
