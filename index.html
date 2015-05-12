@@ -12,18 +12,21 @@
 <body>
 	<div class = "main">
 		<p>Chiu Wei Chieh 2015</p>
-		<h1>食藥署違規食品產地與違規原因資料視覺化</h1>		
+		<h1>食藥署違規食品產地與違規原因資料視覺化</h1>
+		<p>產地與違規原因對照圖表</p>	
 		<ul>
 			<li>資料來源 : <a href="http://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=52" target="blank">食品藥物開放資料平臺</a>。</li>
 			<li>資料處理 : 轉換原始資料結構，對資料值未做任何處理</li>
 			<li>使用方式 : 滑鼠游標移至資料格或 X, Y 軸上顯示統計數據。</li>
 		</ul>
 		<svg id = "chartOriginReason"></svg>
-<!-- 		<form id = "control">			
-			<label><input type="radio" name="variable" value="產地" >產地</label>
-			<label><input type="radio" name="variable" value="原因">原因</label>
-			<label><input type="radio" name="variable" checked = "true" value="產地~原因">產地 ~ 原因</label>
-		</form> -->
+		<p>已發布違規案件與重大食安事件年代分布</p>	
+		<ul>
+			<li>資料來源 : <a href="http://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E9%A3%9F%E5%93%81%E5%AE%89%E5%85%A8%E4%BA%8B%E4%BB%B6%E5%88%97%E8%A1%A8" target="blank">台灣食品安全事件列表</a>。</li>
+			<li>資料處理 : 含有超過一筆資料的列依照時間拆開成單一筆資料，例如2015年4月，2012年8月	手搖飲料店的茶類飲料殘留農藥事件拆成兩列。對欄位數值不做任何處理。</li>
+			<li>使用方式 : 滑鼠游標移至資料格或 X 軸上顯示統計數據。</li>
+		</ul>
+		<svg id = "reportedTime"></svg>
 
 	</div>
 	

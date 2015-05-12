@@ -23,19 +23,29 @@ h1 {
   font-size: 36px;
 }
 
-pre {
-  overflow: auto;
-  white-space: pre-line;
-  white-space: -moz-pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
+h1, p, ul li {
+  letter-spacing: 4px;
 }
 
-code {
-  padding: 10px;
-  font-family: monospace, sans-serif;
-  display: block;
-  background-color: #eeeeee;
+ul {
+  list-style: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+ul li {
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+ul li a:hover {
+  text-decoration: underline;
 }
 
 a:link, a:visited, a:active {
@@ -51,7 +61,7 @@ a:hover {
   width: auto;
   padding: 0 6.77966%;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 80px;
   margin-left: 15.25424%;
   margin-right: 15.25424%;
 }
@@ -61,11 +71,17 @@ a:hover {
   font: 12px sans-serif;
 }
 
-.x.axis {
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.category.x.axis {
   writing-mode: tb-rl;
 }
 
-.axis path {
+.category path, .category line {
   display: none;
 }
 
@@ -75,11 +91,17 @@ a:hover {
 }
 
 .tip text {
-  fill: white;
+  fill: black;
 }
 
 .tip rect, .tip path {
-  opacity: 0.75;
+  opacity: 1.0;
+}
+
+#tipShape {
+  fill: #fff;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
 }
 
 .hidden {
